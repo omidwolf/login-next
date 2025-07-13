@@ -7,7 +7,7 @@ import { logout } from "@/server/route";
 
 function DashboardHeader() {
   const [isLoading, setIsLoading] = useState(false);
-  const user = useContext(AppContext);
+
   const handleClick = () => {
     setIsLoading(true);
     logout();
@@ -21,9 +21,7 @@ function DashboardHeader() {
           </li>
         </ul>
       </nav>
-      <h3 className={style.user}>
-        سلام {user?.name.title} {user?.name.first} {user?.name.last}
-      </h3>
+
       <div className={style.authAction}>
         {!isLoading && <button onClick={handleClick}>خروج</button>}
         {isLoading && <span className="loader"></span>}
