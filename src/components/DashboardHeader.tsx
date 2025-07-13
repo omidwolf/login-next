@@ -10,7 +10,7 @@ function DashboardHeader() {
 
   const handleClick = () => {
     setIsLoading(true);
-    logout();
+    logout(); //
   };
   return (
     <div className={style.header}>

@@ -13,7 +13,6 @@ export default function LoginPage() {
     setIsLoading(true);
     const formData = new FormData(e.currentTarget);
     let data = await login(formData);
-    console.log(data);
     if (data?.error) {
       setError(data.error);
       setIsLoading(false);
