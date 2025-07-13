@@ -10,5 +10,4 @@ function AppLayout({
 }) {
   return <AppContext.Provider value={user}>{children}</AppContext.Provider>;
 }
-
 export default AppLayout;
