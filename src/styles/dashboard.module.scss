@@ -1,0 +1,56 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: $background;
+  display: flex;
+  justify-content: space-between;
+  nav {
+    padding: 1rem;
+
+    ul {
+      display: flex;
+
+      li {
+        list-style: none;
+      }
+    }
+  }
+  a {
+    color: $textColor;
+  }
+  button {
+    width: 100%;
+    padding: 0.4rem;
+    background-color: #0070f3;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    &:hover {
+      background-color: #0059c1;
+    }
+  }
+}
+
+.user,
+.authAction {
+  padding: 1rem;
+}
+.authAction {
+  display: flex;
+  gap: 1rem;
+}
+.user {
+  direction: rtl;
+}
+
+.container {
+  background-color: $darkInput;
+  height: 100%;
+}
